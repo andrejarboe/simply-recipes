@@ -9,7 +9,9 @@ export default function Navbar() {
     <nav className="text-gray-600 shadow-lg">
       <div className="container flex flex-col md:flex-row justify-between px-6 py-4 md:py-6 mx-auto py lg:px-0">
         {/* left header  */}
-        <div className="flex items-center justify-between pb-4 md:pb-0">
+        <div className={'flex items-center justify-between pb-4 md:pb-0' +
+          ' '+ 
+          (show ? 'pb-4' : 'pb-0')}>
           <Link
             to="/"
             className="text-2xl font-bold text-teal-800 drop-shadow-2xl"
