@@ -19,7 +19,7 @@ export default function Navbar() {
           </button>
         </div>
         {/* right header */}
-        <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 ">
+        <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 md:space-x-4 space-y-4 md:space-y-0">
           <Link
             to="/"
             className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 "
@@ -29,26 +29,26 @@ export default function Navbar() {
           </Link>
           <Link
             to="/recipes"
-            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 "
+            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 ml-0"
             activeClassName="text-purple-600"
           >
             Recipes
           </Link>
           <Link
             to="/tags"
-            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 "
+            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0"
             activeClassName="text-purple-600"
           >
             Tags
           </Link>
           <Link
             to="/about"
-            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 "
+            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0"
             activeClassName="text-purple-600"
           >
             About
           </Link>
-          <div className="w-full border-t pt-6 md:border-t-0 md:pt-0">
+          <div className="w-full border-t pt-6 pb-4 md:border-t-0 md:p-0">
             <Link
               to="/contact"
               className="p-3 bg-purple-300 hover:bg-purple-200 text-purple-700 hover:text-purple-600 rounded shadow hover:shadow-xl transition duration-500 "
