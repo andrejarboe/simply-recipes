@@ -13,10 +13,10 @@ export default function Navbar() {
           </div>
           {/* right header */}
           <div className="flex items-center space-x-4 ">
-            <Link to="/about" className="hover:text-gray-900">
+            <Link to="/about" className="hover:text-gray-900 font-bold">
               About
             </Link>
-            <Link to="#" className="hover:text-gray-900">
+            <Link to="#" className="hover:text-gray-900 font-bold">
               History
             </Link>
           </div>
