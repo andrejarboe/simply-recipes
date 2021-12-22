@@ -27,7 +27,7 @@ export default function Navbar() {
           </Link>
           <Link
             to="/contact"
-            className="p-3 bg-purple-300 hover:bg-purple-200 text-purple-700 hover:text-purple-600 rounded shadow hover:shadow-xl transition duration-500 hidden lg:inline-block"
+            className="p-3 bg-purple-300 hover:bg-purple-200 text-purple-700 hover:text-purple-600 rounded shadow hover:shadow-xl transition duration-500"
           >
             Contact
           </Link>
