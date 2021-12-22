@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { MenuIcon } from "@heroicons/react/outline"
 
 export default function Navbar() {
+  const [show, setShow] = useState(false);
+
   return (
     <nav className="text-gray-600 shadow-lg">
       <div className="container flex flex-col md:flex-row justify-between px-6 py-4 md:py-6 mx-auto py lg:px-0">
@@ -14,15 +16,18 @@ export default function Navbar() {
           >
             Simply Recipes
           </Link>
-          <button className="flex justify-center items-center md:hidden">
+          <button 
+            onClick={() => setShow(!show)}
+          className="flex justify-center items-center md:hidden">
             <MenuIcon className="h-8 w-auto text-2xl text-purple-500 flex items-center justify-center " />
           </button>
         </div>
         {/* right header */}
-        <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 ">
+        <div className={'flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 md:block' + ' ' + (show ? 'block' : 'hidden')}>
+        {/* <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 "> */}
           <Link
             to="/"
-            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 "
+            className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0"
             activeClassName="text-purple-600"
           >
             Home
