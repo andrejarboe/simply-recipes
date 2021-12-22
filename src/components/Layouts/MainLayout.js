@@ -6,7 +6,7 @@ export default function MainLayout(props) {
   return (
     <>
       <Navbar />
-      <div className="pattern min-h-screen">{props.children}</div>
+      <div className="pattern min-h-[80vh]">{props.children}</div>
       <Footer />
     </>
   )
