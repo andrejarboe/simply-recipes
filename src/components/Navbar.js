@@ -1,13 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Menu } from "@heroicons/react/solid"
 
 export default function Navbar() {
   return (
     <nav className="text-gray-600 shadow-lg">
+      <Menu className="h-5 w-5 text-blue-500" />
       <div className="container flex justify-between px-6 py-6 mx-auto py lg:px-0">
         {/* left header  */}
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-teal-800">
+          <Link
+            to="/"
+            className="text-2xl font-bold text-teal-800 drop-shadow-2xl"
+          >
             Simply Recipes
           </Link>
         </div>
