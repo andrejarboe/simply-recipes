@@ -25,7 +25,7 @@ export default function Navbar() {
           </button>
         </div>
         {/* right header */}
-        <div className={'flex flex-col md:flex-row md:flex items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0' + ' ' + (show ? 'block' : 'hidden')}>
+        <div className={'flex flex-col md:flex-row md:flex items-center justify-center text-center px-6 md:space-x-4 space-y-4 md:space-y-0' + ' ' + (show ? 'block' : 'hidden')}>
         {/* <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 "> */}
           <Link
             to="/"
@@ -39,7 +39,7 @@ export default function Navbar() {
             className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0 ml-0"
             activeClassName="text-purple-600"
           >
-            Recipes
+            Recipies
           </Link>
           <Link
             to="/tags"
