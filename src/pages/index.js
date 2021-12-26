@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import MainLayout from "../components/Layouts/MainLayout"
+import Images from "../examples/Images"
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Images />
     </MainLayout>
   )
 }
