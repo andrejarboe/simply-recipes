@@ -1,5 +1,5 @@
 import React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 
@@ -8,8 +8,8 @@ export default function Hero2() {
 
   return (
     <header className="container mx-auto relative overflow-hidden  p-4 md:px-0">
-      <GatsbyImage
-        image="../assets/images/food2.jpeg"
+      <StaticImage
+        src="../../assets/images/food2.jpeg"
         alt=""
         className="rounded-lg drop-shadow-lg h-[300px]"
         placeholder="tracedSVG"
