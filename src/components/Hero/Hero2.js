@@ -7,10 +7,10 @@ export default function Hero2() {
       const image = getImage("../assets/images/food2.jpeg")
 
   return (
-    <header className="container mx-auto relative overflow-hidden  p-4 md:px-0">
+    <header className="container mx-auto relative overflow-hidden  p-4">
       <StaticImage
         src="../../assets/images/food2.jpeg"
-        alt=""
+        alt="breakfest bowl"
         className="rounded-lg drop-shadow-lg h-[300px]"
         placeholder="tracedSVG"
         layout="fullWidth"

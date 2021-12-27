@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="text-gray-600 shadow-lg">
-      <div className="container flex flex-col md:flex-row justify-between px-6 py-4 md:py-6 mx-auto py lg:px-0">
+      <div className="container flex flex-col md:flex-row justify-between px-4 py-4 md:py-6 mx-auto py">
         {/* left header  */}
         <div className={'flex items-center justify-between pb-4 md:pb-0' +
           ' '+ 
