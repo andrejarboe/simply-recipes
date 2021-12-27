@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import MainLayout from "../components/Layouts/MainLayout"
 
@@ -21,15 +21,12 @@ export default function about() {
                 Taiyaki tumblr flexitarian jean shorts brunch, aesthetic salvia
                 retro.
               </p>
-              <Link
-                to="/contact"
-                className="py-2 px-4 bg-purple-200 text-purple-600"
-              >
+              <Link to="/contact" className="py-2 px-4 bg-purple-200 text-purple-600">
                 Contact
               </Link>
             </div>
           </article>
-          <GatsbyImage
+          <StaticImage
             src="../assets/images/about.jpg"
             alt="Fusion Cuisine on a Plate"
             className="mt-6 md:mt-0"
