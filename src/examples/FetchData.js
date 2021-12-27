@@ -3,9 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const ComponentName = () => {
   const data = useStaticQuery(graphql`
-    {
+    query FirstQuery{
       site {
-        siteMetadata {
+        info: siteMetadata {
           author
           description
           simpleData
@@ -24,9 +24,9 @@ const ComponentName = () => {
   `)
   return (
       <div>
-          <h2>{data.site.siteMetadata.person.name}</h2>
+          <h2>{data.site.info.person.name}</h2>
           <div>
-            {data.site.siteMetadata.complexData.map((item, index) =>(
+            {data.site.info.complexData.map((item, index) =>(
                 <p
                     key={index}
                 >
