@@ -10,7 +10,6 @@ export default function Home() {
       </head>
       <main className="">
         <Hero2 />
-        asdf
       </main>
       {/* 
       <Images /> */}
