@@ -5,9 +5,9 @@ import MainLayout from "../components/Layouts/MainLayout"
 export default function Home() {
   return (
     <MainLayout>
-      <head>
+      {/* <head>
         <title>Simply Recipes | Home</title>
-      </head>
+      </head> */}
       <main className="">
         <Hero2 />
       </main>
