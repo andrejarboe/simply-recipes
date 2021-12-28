@@ -1,5 +1,4 @@
 export default {
-
     name: 'contact',
     title: 'Contact Item',
     type: 'object',

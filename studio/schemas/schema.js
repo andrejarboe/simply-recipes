@@ -11,6 +11,12 @@ import post from './post'
 import author from './author'
 import siteInfo from './siteInfo'
 import contact from './contact'
+import recipesImage from './recipesImage'
+import recipes from './recipes'
+import tags from './tags'
+import instructions from './instructions'
+import ingredients from './ingredients'
+import tools from './tools'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,6 +34,12 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     blockContent,
     siteInfo,
-    contact
+    contact,
+    recipes,
+    recipesImage,
+    tags,
+    instructions,
+    ingredients,
+    tools,
   ]),
 })
