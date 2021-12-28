@@ -27,21 +27,17 @@ export default function Gallery() {
 
   const nodes = data.allFile.nodes
 
+  
   return (
-    <div>
+      <div>
       <h2 className="text-2xl">Simple Image Gallery</h2>
       <div className="container py-4 flex flex-wrap justify-evenly ">
         {nodes.map((image, index) => {
             const { name } = image 
+            const imagePath = getImage(image)
           return (
-            <article key={index}
-                className="my-4"
-            >
-              <GatsbyImage 
-                image={image.childImageSharp.gatsbyImageData} 
-                alt={name}
-                className="rounded"
-              />
+            <article key={index} className="my-4">
+              <GatsbyImage image={imagePath} alt={name} className="rounded" />
               <p>{name}</p>
             </article>
           )
