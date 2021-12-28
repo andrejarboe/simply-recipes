@@ -12,8 +12,6 @@ export default function Home() {
       <main className="">
         <Hero2 />
       </main>
-      {/* 
-      <Images /> */}
       <FetchData />
     </MainLayout>
   )
