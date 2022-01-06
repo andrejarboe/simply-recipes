@@ -1,12 +1,13 @@
 {
-  "name": "bolier",
+  "name": "simplyrecipes",
   "private": true,
   "version": "1.0.0",
-  "description": "A portfolio using structured content and a static site builder",
+  "description": "",
   "main": "package.json",
   "author": "Andre Jarboe <andrejarboe@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
+    "start": "sanity start",
     "dev": "sanity start",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
     "build": "sanity build",
@@ -32,6 +33,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:andrejarboe/gatsby-sanity-boiler.git"
+    "url": "git@github.com:andrejarboe/simply-recipes.git"
   }
 }
