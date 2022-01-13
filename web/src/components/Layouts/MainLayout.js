@@ -8,7 +8,6 @@ export default function MainLayout(props) {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         {props.children}
-        <div>footer</div>
         {/* put mt-auto on the footer class */}
         <Footer />
       </div>

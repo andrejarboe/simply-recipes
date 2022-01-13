@@ -37,7 +37,7 @@ export default function Gallery() {
             const imagePath = getImage(image)
           return (
             <article key={index} className="my-4">
-              <GatsbyImage image={imagePath} alt={name} className="rounded" />
+              <GatsbyImage image={imagePath} alt={name} className="rounded-2xl" />
               <p>{name}</p>
             </article>
           )
